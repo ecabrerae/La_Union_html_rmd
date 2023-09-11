@@ -1,0 +1,9 @@
+﻿Nro,Nombre,Via,Sector,Norte,Este,Cota,Prof,Pot,Q,Estado
+1,Pozo Tulipanes,Vía La Unión - Recinto Cucaracha,Lotización Los Tulipanes,14974.079,675953.53,159.45,77,15,2,Operativo
+2,Pozo San Ramón,Centro urbano,Barrio San Ramón,15537.932,678032.324,146.3,55,5,5,Operativo
+3,Pozo Luz de América,Vía La Unión - Recinto El Silencio,Barrio Luz de América,15101.332,678569.743,153.65,90,15,10,Operativo
+4,Pozo La Alborada,Centro urbano,Barrio San Carlos,14679.354,677625.921,158.52,85,15,10,Operativo
+5,Pozo Las Delicias 1,Vía La Unión - La Independencia,Barrio Las Delicias,13889.429,677184.521,160.08,70,20,12,Operativo
+6,Pozo Central 1,Centro urbano,Barrio San Carlos,14785.791,677583.018,156.08,50,5,3,Operativo
+7,Pozo Central 2,Centro urbano,Barrio San Carlos,14792.036,677585.932,156.08,94,20,8,Operativo
+8,Pozo Las Delicias 2,Vía La Unión - La Independencia,Barrio Las Delicias,13889.595,677184.598,160.178,92,15,10,Operativo

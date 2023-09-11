@@ -1,0 +1,16 @@
+﻿Nro,Cuenca,Subcuencas,Codigo,Tramo,L_km,Csup_m,Cinf_m,S,K_hs,X,Subtramos
+1,Cocola,Cocola,C3,R1,3.737,191.25,181.61,0.0026,0.744,0.49,9
+2,Cocola,Cocola,C6,R2,0.094,191.58,181.61,0.1062,0.037,0.5,1
+3,Cocola,Cocola,C7,R3,3.622,181.61,174.04,0.0021,0.634,0.45,7
+4,Cocola,Cocola,C10,R4,1.582,174.04,171.76,0.00144,0.328,0.32,3
+5,Cocola,Cocola,C11,R5,4.975,171.76,154.247,0.00352,0.85,0.5,11
+6,Cocola,Cocola,C12,R6,1.673,154.25,151.503,0.00164,0.331,0.35,3
+7,Cocola,Cocola,C14,R7,4.18,151.5,145.44,0.00145,0.826,0.43,9
+8,Cucaracha,Cucaracha,CU2,R1,7.377,240,188,0.00705,0.88,0.5,11
+9,Cucaracha,Cucaracha,CU3,R2,6.181,188,157.66,0.0049,0.96,0.5,12
+10,Cucaracha,Cucaracha,CU6,R3,6.562,157.66,144.04,0.002,1.24,0.5,15
+11,Cucaracha,Cucaracha,CU8,R4,9.819,144.04,127.95,0.002,2.204,0.5,27
+12,Cucaracha,Cucaracha,CU11,R5,8.955,127.95,119.72,0.001,2.57,0.25,16
+13,Cucaracha,Cucaracha,CU12,R6,3.279,130.94,119.72,0.003,0.551,0.45,6
+14,Cucaracha,Cucaracha,CU13,R7,1.88,119.72,117.77,0.001,0.45,0.25,3
+15,Cucaracha,Cucaracha,CU16,R8,10.8,142.91,117.77,0.002,2.204,0.5,27

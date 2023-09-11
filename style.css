@@ -1,0 +1,290 @@
+/* Differentiate TOC levels more */
+.tocify .tocify-subheader .tocify-item {
+  font-size: 12px;
+  line-height: 1em;
+}
+
+/* Separate sections in the body more */
+.level2 { margin-bottom: 50px; }
+h3 { font-size: 20px; }
+
+/* Combine collapsed code with show/hide button */
+.code-folding-btn { 
+  float: left !important;
+  margin-bottom: 0 !important;
+  width: 100%;
+  background-color: #f5f5f5; 
+}
+.code-folding-btn span { font-size: 0; }
+.code-folding-btn span::before { font-size: 12px; }
+.code-folding-btn[aria-expanded = "false"] span::before { 
+  content: '+  Show code  +';
+}
+.code-folding-btn[aria-expanded = "true"] span::before { 
+  content: '-  Hide code  -';
+}
+.code-folding-btn[aria-expanded = "true"] { 
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-style: none;
+}
+
+
+.r-code-collapse + .row { margin-top: 10px; }
+.r {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-style: none;
+}
+
+ /*------------- Whole Document se aplica el tipo de letra al texto ---------------- */
+
+body {
+    font-family: 'Muli';
+    font-size: 19px;
+}
+
+/*----------------ADDING WHITE SPACE-------------*/
+
+.title {
+  margin-top: 2em !important;
+  margin-bottom: 0.75em;
+}
+
+.section h1 { 
+  padding-top: 3em !important; /*adding so much padding because theme adds a margin-top: -65px by default */
+  margin-bottom: 0.75em;
+}
+/*----------------------------------------------*/
+
+ /* Space Between TOC and 
+  Righthand side content on large screens */
+
+ @media (min-width: 992px) {
+    .col-md-9 {
+      width: 75%;
+      padding-left: 5em !important;
+    }
+ }
+/*-----------------------------------------------------*/
+ 
+ /* links Su color, pero también de que color se vuelven cuando pasas el cursor sobre ellos.*/
+a { 
+  color: #5ebccf;
+}
+
+a:hover {
+ color: #50a0b0; /* darker color when hovering */
+}
+/*-----------------------------------------------------*/
+
+/*----------LOGO above TOC---------*/
+
+ #TOC::before {
+  content: "";
+  display: block;
+  height: 200px;
+  margin: 2em 20px 40px 20px;
+  background-image: url("logo.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/*----------------------------------*/
+
+/*-------------Se inserta un logo en la parte derecha superior---------------------*/
+.upper-right-logo {
+  margin-top: 20px;
+  background-image: url("AA_Foto_Pasaporte_Eric.png");
+  height: 150px;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+/*-------------------------------------------------*/
+
+/* -----------HERO IMAGE AT TOP OF PAGE -----------*/
+
+/* LARGE HERO IMAGE AT TOP OF PAGE*/
+
+.hero-image {
+    position: relative;
+    margin-bottom: 2em;
+    /* liner gradient tints the image darker for readability*/
+    background-image: linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ), url(Banner_6.png); 
+    height: 400px;
+    background-size: cover;
+    background-color: #141c25f2;
+    background-position: center center;
+    display: flex; /* Change to `display: none` for no hero image */
+    justify-content: center;
+    align-items: center;
+}
+
+.top-text {
+  position: relative;
+  font-size: 34px;
+  padding-bottom: 0.5em
+  text-transform: uppercase;
+  text-align: center;
+  display: block; /* Change to `display: none` for no top text */
+  color: #ffffff72;
+}
+
+.bottom-text {
+  position: relative;
+  letter-spacing: 0.065em;
+  line-height: 1em;
+  font-size: 68px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block; /* Change to `display: none` for no bottom text */
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+}
+/*----------------------------------------------*/
+
+/*-----------------TOC----------------*/
+
+/* Makes TOC sticky (needed if you used a hero image) */
+
+.row-fluid{
+  display: flex; /* Necessary for sticky TOC*/
+
+}
+
+.tocify {
+  position: -webkit-sticky;
+  position: sticky; 
+  top: 120px; /*Controls where TOC stops when sticky */
+  width: 100% !important;
+  border: none;
+}
+/*------------------------------------*/
+
+/* ------------TOC links -------------*/
+
+.list-group-item {  /* cambia ligeramente el color de los enlaces y tambien aumenta el tamaño de la fuente */
+    color: #7b8a8b;
+    font-size: 16px;
+}
+
+.list-group-item.active { /* Cambia el color y el color de fondo de los enlaces activos, el enlace que muestra que seccion esta viendo activamente */
+    color: #2c3e50;
+    background-color: white;
+    border: none;
+}
+
+.list-group-item:hover, 
+.list-group-item.active:hover { /* Finalmente, cambia lo que sucede cuando pasa el mouse sobre los enlaces regulares y activos: */
+    color: #131b23;
+    background-color: white;
+}
+/* ------------------------------------*/  
+
+
+
+/*----------------NAVBAR: Navegation bar styling ---------------*/
+.navbar-default {
+    background-color: #141c25f2;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.active>a, 
+a.dropdown-toggle:hover {
+  background-color: #141c25 !important;
+}
+
+/* Dropdown menu color */
+.navbar-default .dropdown-menu {
+  background-color: #141c25;
+}
+
+/* Dropdown menu hover color */
+  .navbar-default .dropdown-menu>li>a:hover {
+    background-color: #202831f2;
+  }
+
+/* Navbar Links when hovered*/
+.navbar-default .dropdown-menu>.active>a
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav:hover, 
+.navbar-default .navbar-nav>li>a:hover, 
+a.navbar-brand:hover {
+  color: #ffffffab !important;
+  background-color: #141c25;
+}
+/* -------------------------------------------------------------*/  
+
+
+ /* -----------Question counter ---------*/
+
+  body {
+    counter-reset: li;
+  }
+
+  .question ol {
+    /* Remove the default left padding */
+    padding-left: 0;
+  }
+
+  .question ol>li {
+    /* Create a positioning context */
+    position: relative;
+    /* Disable the normal item numbering */
+    list-style: none;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    padding-left: 120px;
+  }
+
+  .question ol>li:before,
+  .question ol>p>li:before{
+    /* Use the counter as content */
+    content: "Question " counter(li) ": ";
+    /* Increment the counter by 1 */
+    counter-increment: li;
+    position: absolute;
+    color: #3d85bb;
+    left: -0.5px;
+    font-weight: bold;
+  }
+
+  .question ol ol {
+    counter-reset: subitem;
+  }
+/* ------------------------------------*/  
+  
+/* ----------------------------------------------------------------------------*/   
+h1.title {  /* Titulo en el YAML se centra (se edita)*/
+  font-size: 38px;
+  font-family: 'Muli';
+  color: black;
+  text-align: center;
+}
+h4.author { /* Header 4 - and the author and data headers use this too  */ /* Autor en el YAML se centra (se edita)*/
+  font-size: 19px;
+  font-family: 'Muli';
+  color: black;
+  text-align: center;
+}
+h4.date { /* Header 4 - and the author and data headers use this too  */ /* Fecha en el YAML se centra (se edita)*/
+  font-size: 19px;
+  font-family: 'Muli';
+  color: black;
+  text-align: center;
+}
+/* ----------------------------------------------------------------------------*/  
+
+/* -----------------------Tamano de euaciones en latex-------------------------*/  
+.math {  /* Aqui se modifica el tamaño de los caracteres de las ecuaciones en latex  */
+    font-size: 11pt;
+}
+#hidden {
+    display: block;
+}
+/* ---------------------------------------------------------------------------*/  
+
