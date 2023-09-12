@@ -267,6 +267,9 @@ Determinar los caudales medios, mínimos y máximos mensuales en las posibles ca
 
 -   Realizar un estudio de caudales máximos para un posterior análisis de inundabilidad.
 
+-   Realizar el diseño hidráulico de un vertedor en el río Cucaracha para la obra de toma a la Planta de tratamiento.
+
+
 <br>
 
 # MATERIALES Y MÉTODOS.
@@ -362,6 +365,8 @@ En este caso se empleará el método de entrada de un Hietograma especificado.
 <br>
 
 El área consolidada de la cabecera parroquial "La Unión" del Cantón Quinindé es la zona estudio del proyecto y como puede verse en la figura \@ref(fig:figura1) se encuentra ubicada en el sur de la provincia Esmeraldas. La Unión tiene una población cercana a los 20 000 habitantes y en su zona periurbana predomina la actividad agrícola, ver la figura \@ref(fig:figura2).
+
+<br>
 
 ```{r figura1, echo=FALSE, fig.cap = "Ubicación de la zona de estudio.", fig.id="figura1", fig.asp=ar_pic_1, fig.width = 6, fig.pos="H", message=FALSE, warning=FALSE}
 
@@ -461,8 +466,6 @@ Para complementar la información sobre las fuentes de abasto de agua a La Unió
 
 <br>
 
-<br>
-
 ```{r tabla1, echo=FALSE, include=TRUE, tab.cap="Datos de pozos y bombas que conforman el sistema de captación de agua para consumo de La Unión.", tab.id="tabla1"}
 
 poz.union <-read.csv("csv_files/Pozos_La_union.csv", header = T)  #Datos tabla para firma.
@@ -491,6 +494,8 @@ theme_booktabs() %>%
 <br>
 
 En el presente estudio se analiza (desde el punto de vista hidrológico) posibles alternativas para dotar de una fuente superficial de abasto de agua a la zona urbana de la cabecera parroquial "La Unión". En tal sentido se presenta la figura \@ref(fig:figura3) en la que se puede observar las 4 propuestas de captación que se analizan: Río Mache, Río Cucaracha, Río Cocola y Río Blanco.
+
+<br>
 
 ```{r figura3, echo=FALSE, fig.cap = "Puntos de captación de agua superficial analizados en el estudio.", fig.id="figura3", fig.asp=ar_pic_3, fig.width = 6, fig.pos="H", message=FALSE, warning=FALSE}
 
@@ -926,6 +931,7 @@ Básicamente son 1- Factor de forma de la cuenca. 2- Coeficiente de compacidad o
 
 Este factor es la relación entre el ancho medio de la cuenca y su longitud axial. Puede expresarse tanto en función del ancho medio de la cuenca como del área como se muestra en la ecuación \@ref(eq:ecuacion1).
 
+<br>
 ```{=tex}
 \begin{equation} 
   R_f=\frac{B}{L_c}=\frac{A}{L_c^2}
@@ -964,6 +970,7 @@ flextable(data=tabla1) %>%
 
 Se representa por $K_c$ y se define como la relación que existe entre el perímetro de la cuenca y el perímetro de una circunferencia de área igual a la de la cuenca, luego es un parámetro adimensional que puede ser calculado con la expresión \@ref(eq:ecuacion2).
 
+<br>
 ```{=tex}
 \begin{equation} 
   K_c=\frac{P}{2 \sqrt{\pi A}}=\frac{0.28 P}{\sqrt{A}}
@@ -1004,6 +1011,7 @@ flextable(data=tabla2) %>%
 
 Se representa por $C_c$ y se obtiene por medio de la expresión \@ref(eq:ecuacion3):
 
+<br>
 ```{=tex}
 \begin{equation} 
   C_c=4 \pi \frac{A}{P^2}
@@ -1058,6 +1066,7 @@ Se representan por $Cmáxcp~(m)$ y $Cmíncp~(m)$ , se obtienen por medio de una 
 
 Se representan por $\Delta \mathrm{hcp} (m)$, se obtiene restando las cotas máximas y mínimas del cauce principal, ecuación \@ref(eq:ecuacion4).
 
+<br>
 ```{=tex}
 \begin{equation} 
   \Delta \mathrm{hcp}=Cmáxcp-Cmíncp
@@ -1081,13 +1090,14 @@ Se representan por $Ltd~(km)$, y se define como la sumatoria de las longitudes d
 En cierto modo es el reflejo de la dinámica de la cuenca, de la estabilidad de la red hidrográfica y del tipo de escorrentía de superficie, así como de la respuesta de la cuenca a una precipitación. Se define como la relación entre la longitud total de los cursos de agua y su área total, la unidad es $(\mathrm{km}^{-1})$, ver la ecuación \@ref(eq:ecuacion5).
 
 <br>
-
 ```{=tex}
 \begin{equation} 
   D=\frac{L t d}{A}
   (\#eq:ecuacion5)
 \end{equation}
 ```
+<br>
+
 En la tabla \@ref(tab:tabla4) presentada por Delgadillo & Paez(2008) citados por [@camino2018estudio] se muestra una categorización de la capacidad de drenaje de una cuenca atendiendo al valor de la densidad de drenaje.
 
 <br>
@@ -1131,6 +1141,7 @@ Se representan por $Nc$, y no es más que la cantidad de cauces del sistema fluv
 
 Se define como el número total de corrientes o cauces entre la superficie de la cuenca, las unidades son $(\mathrm{km}^{-2})$ como puede demostrarse analizando la ecuación \@ref(eq:ecuacion6).
 
+<br>
 ```{=tex}
 \begin{equation} 
   F=\frac{Nc}{A}
@@ -1149,6 +1160,7 @@ Cuencas con $F$ pequeños (tendiendo a 0) son "mal drenadas", pueden emplearse l
 
 Se representan por $Smcp$ , y no es más que el cociente entre el desnivel del cauce principal y la longitud del mismo, como puede verse en la ecuación \@ref(eq:ecuacion7).
 
+<br>
 ```{=tex}
 \begin{equation} 
   Smcp=\frac{\Delta \mathrm{hcp}}{Lcp}
@@ -1171,6 +1183,7 @@ Se representan por $Smpcp$, y representa la pendiente que garantiza que las áre
 
 Existen varias expresiones para calcular el tiempo de concentración de una cuenca que es el tiempo de viaje de una gota de lluvia que cae en el punto hidráulicamente más alejado de la cuenca y escurre superficialmente hasta su cierre. En este caso se emplea la expresión de Kirpich donde el tiempo de concentración se obtiene en minutos [@woodward2010national], ver la ecuación \@ref(eq:ecuacion8).
 
+<br>
 ```{=tex}
 \begin{equation} 
   t_c=3.989L_c^{0.77}S^{-0.385}
@@ -1185,6 +1198,7 @@ Existen varias expresiones para calcular el tiempo de concentración de una cuen
 
 El tiempo de retardo se relaciona con el tiempo de concentración por medio de la expresión \@ref(eq:ecuacion9) donde el $t_{lag}$ se obtiene en minutos:
 
+<br>
 ```{=tex}
 \begin{equation} 
   t_{lag}=0.6t_c
@@ -1634,6 +1648,8 @@ n_years<-anho_end-anho_start
 
 Otro de los análisis que es importante realizar guarda relación con la variación de los datos de precipitación en cada mes para los diferentes años, y para esto se realiza el gráfico de caja de la figura \@ref(fig:figura10).
 
+<br>
+
 ```{r figura10, echo=FALSE, fig.cap = "Gráfico de caja de valores de precipitación por meses, estación M0025 del INAMHI.", fig.id="figura10", fig.asp=ar_pic_10, fig.width = 6, fig.pos="H", message=FALSE, warning=FALSE}
 
 #--- Dato ---#
@@ -1698,6 +1714,8 @@ Todos estos análisis indican que no es necesario eliminar estos valores atípic
 <br>
 
 Primeramente, se muestra la serie de trabajo en la tabla \@ref(tab:tabla8), esta serie está formada con los valores acumulados anuales de precipitación, es decir, con los valores de la última columna de la tabla \@ref(tab:tabla7)
+
+<br>
 
 ```{r tabla8, echo=FALSE, include=TRUE, tab.cap="Serie de trabajo, precipitación acumulada por años, estación M0025 del INAMHI.", tab.id="tabla8"}
 
@@ -1772,6 +1790,7 @@ n_years<-(anho_end-anho_start)+1
 
 Las frecuencias empíricas acumuladas se calculan para luego ser graficadas en una curva en la que se representa la variable (en este caso la precipitación) en función de la probabilidad empírica de tener valores menores al valor observado (probabilidad de no excedencia o no sobrepaso) esta probabilidad calculada para una muestra ordenada de forma decreciente tiene la siguiente forma, ver ecuación \@ref(eq:ecuacion10):
 
+<br>
 ```{=tex}
 \begin{equation} 
   Prob(X\leq{x_j})=F({x_j})=\frac{j-a}{N+b}
@@ -1903,6 +1922,8 @@ flextable(data=f.eqr) %>%
 
 En la figura \@ref(fig:figura12) se presenta una gráfica donde se ubican las mediciones de precipitación anual en las ordenadas mientras que en las abscisas se colocan los valores de probabilidad 1- Empíricas (valores representados por puntos, ver tabla \@ref(tab:tabla10)) y 2- Teóricas (representadas por líneas), la serie GEV Gumbel es la curva de ajuste principal, la serie GEV Gumbel PE es la curva de Probabilidad esperada y las series GEV Gumbel5%LC y GEV Gumbel95%LC representan los límites de confianza del ajuste de datos por medio de esta función.
 
+<br>
+
 ```{r figura12, echo=FALSE, fig.cap = "Probabilidad de excedencia de los datos de precipitación anual. Estación M0025 del INAMHI.", fig.id="figura12", fig.asp=ar_pic_12, fig.width = 6.5, fig.pos="H", message=FALSE, warning=FALSE}
 
 #--- Dato ---#
@@ -2026,7 +2047,6 @@ A continuación, se presentan las ecuaciones de las curvas IFD para la [**Zona: 
 Para: $5min \leq t \leq 39.1min$ se tiene la ecuación \@ref(eq:ecuacion11).
 
 <br>
-
 ```{=tex}
 \begin{equation} 
   I_{TR}=24.951Id_{TR}t^{-0.135}
@@ -2038,7 +2058,6 @@ Para: $5min \leq t \leq 39.1min$ se tiene la ecuación \@ref(eq:ecuacion11).
 Para: $39.1min < t \leq 1440min$ se tiene la ecuación \@ref(eq:ecuacion12).
 
 <br>
-
 ```{=tex}
 \begin{equation} 
   I_{TR}=220.54Id_{TR}t^{-0.728}
@@ -2203,6 +2222,8 @@ Como se dijo con anterioridad para la obtención del valor de CN de cada subcuen
 2- Mapa de grupos hidrológicos: En [@chow1994hidrologia] se presenta una clasificación de los suelos atendiendo a su potencial de escorrentía, estos pueden ser de tipo A: caracterizados por un bajo potencial de escorrentía, B: Suelos con moderado potencial de escorrentía, C: Suelos con moderadamente alto potencial de escorrentía y D: Suelos con alto potencial de escorrentía. Estos grupos hidrológicos pueden correlacionarse con la textura de los suelos, ver [@pullupaxi2013incertidumbre], en tal sentido suelos con una textura gruesa coinciden con grupo A, textura media - grupo B, textura fina - grupo C y textura muy fina - grupo D. Con esta información y con un mapa de textura que se tiene de todo el país se pudo obtener los mapas de grupos hidrológicos que se muestra en las figuras \@ref(fig:figura14)c y \@ref(fig:figura16)c para las cuencas de los ríos Cocola y Cucaracha respectivamente.
 
 3- Mapa de uso del suelo: Este mapa se obtuvo por medio de un proceso de clasificación supervisada con un modelo Random Forest aplicado a una imagen de tipo Planet del mes de enero de 2023 y resolución de 4.7 m, ver parte de la imagen en la \@ref(fig:figura2). Este proceso fue realizado en R con el uso de los paquetes [e1071]{.underline}, [rpart]{.underline} y [randomForest]{.underline}. El resultado del proceso se concreta con los mapas que se muestran en las figuras \@ref(fig:figura14)d y \@ref(fig:figura16)d.
+
+<br>
 
 ```{r figura14, echo=FALSE, fig.cap = "Mapas necesarios para obtener el mapa de CN de la cuenca del río Cocola.", fig.id="figura14", fig.asp=ar_pic_14, fig.width = 6, fig.pos="H", message=FALSE, warning=FALSE}
 
@@ -3231,11 +3252,15 @@ El método de Muskingum permite la evaluación del tránsito agregado de crecien
 
 Donde: $I~(t)$ - caudal de entrada al tramo, $Q~(t)$ - Caudal de salida del tramo y $S~(t)$ - Almacenamiento.
 
+<br>
+
 ```{r figura27, echo=FALSE, fig.cap = "Almacenamiento por prisma y cuña en un tramo de canal.", fig.id="figura27", fig.asp=ar_pic_27, out.width="800px", fig.align='center', message=FALSE, warning=FALSE}
   
   knitr::include_graphics("Imagenes/Muskingum_img1.jpg")
 
 ```
+
+<br>
 
 El método modela el almacenamiento volumétrico de creciente en un tramo de cauce mediante la combinación de los denominados almacenamientos de cuña y prisma, ver Figura \@ref(fig:figura27).                      
 
@@ -3364,6 +3389,8 @@ if (fig_30_created=="Si"){
 <br>
 
 En la tabla \@ref(tab:tabla24) se muestran los valores de caudal máximo obtenidos para cada mapa de las figuras \@ref(fig:figura29) y \@ref(fig:figura30). 
+
+<br>
 
 ```{r tabla24, echo=FALSE, include=TRUE, tab.cap="Caudales máximos obtenidos en los hidrogramas de las corridas de los modelos en HECHMS.", tab.id="tabla24"}
 

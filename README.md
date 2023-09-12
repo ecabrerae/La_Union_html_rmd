@@ -4,6 +4,3 @@
 
 Repositorio para el proyecto hidrológico de la Parroquia La Unión de Quinindé, proyecto realizado en html, en una página web.
 
-View HTML with these links:
-
-[La_Union_html_rmd](https://htmlpreview.github.io/?https://ecabrerae.github.io/La_Union_html_rmd/
