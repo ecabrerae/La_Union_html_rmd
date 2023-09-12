@@ -4145,9 +4145,6 @@ knitr::include_graphics("Imagenes/Grafica_de_radios.png")
 ```
 
 
-
-
-
 # REFERENCIAS BIBLIOGRÁFICAS.
 
 <br>
