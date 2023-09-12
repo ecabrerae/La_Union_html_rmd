@@ -410,7 +410,7 @@ En la figura \@ref(fig:figura1) se puede observar que la zona urbana de la ciuda
 
 <br>
 
-```{r figura2, echo=FALSE, fig.cap = "Imagen satelital Planet, área urbana de La Unión y pozos de abasto de agua.", fig.id="figura2", fig.asp=ar_pic_2, fig.width = 6, fig.pos="H", message=FALSE, warning=FALSE}
+```{r figura2, echo=FALSE, fig.cap = "Imagen satelital Planet, área urbana de La Unión y pozos de abasto de agua.", fig.id="figura2", fig.asp=ar_pic_2, out.width="1000px", fig.align='center', message=FALSE, warning=FALSE}
 
 #--- Dato ---#
 fig_2_created<-"Si"         #"Si" Es porque ya se creo el grafico y solo hay que cargarlo, "No" hay que creralo
@@ -575,7 +575,7 @@ En la figura \@ref(fig:figura4) se puede observar la delimitación de las cuenca
 
 <br>
 
-```{r figura4, echo=FALSE, fig.cap = "Modelo de elevación digital del terreno, cuencas Mache, Cucaracha y Cocola.", fig.id="figura4", fig.asp=ar_pic_4, fig.width = 6, fig.pos="H", message=FALSE, warning=FALSE}
+```{r figura4, echo=FALSE, fig.cap = "Modelo de elevación digital del terreno, cuencas Mache, Cucaracha y Cocola.", fig.id="figura4", fig.asp=ar_pic_4, out.width="1000px", fig.align='center', message=FALSE, warning=FALSE}
 
 #--- Dato ---#
 fig_4_created<-"Si"         #"Si" Es porque ya se creo el grafico y solo hay que cargarlo, "No" hay que creralo
@@ -653,7 +653,7 @@ En la \@ref(fig:figura5) también se ubican las obras hidráulicas principales q
 
 <br>
 
-```{r figura5, echo=FALSE, fig.cap = "Modelo de elevación digital del terreno, cuenca del río Blanco a la altura de La Unión.", fig.id="figura5", fig.asp=ar_pic_5, fig.width = 6, fig.pos="H", message=FALSE, warning=FALSE}
+```{r figura5, echo=FALSE, fig.cap = "Modelo de elevación digital del terreno, cuenca del río Blanco a la altura de La Unión.", fig.id="figura5", fig.asp=ar_pic_5, out.width="1000px", fig.align='center', message=FALSE, warning=FALSE}
 
 #--- Dato ---#
 fig_5_created<-"Si"         #"Si" Es porque ya se creo el grafico y solo hay que cargarlo, "No" hay que creralo
@@ -3453,7 +3453,7 @@ En época de estiaje los niveles de agua en el río son muy bajos y sería invia
 
 <br>
 
-```{r figura32, echo=FALSE, fig.cap = "Ubicación del vertedor en el río y área de la planta de tratamiento.", fig.id="figura32", fig.asp=ar_pic_32, fig.width = 6, fig.pos="H", message=FALSE, warning=FALSE}
+```{r figura32, echo=FALSE, fig.cap = "Ubicación del vertedor en el río y área de la planta de tratamiento.", fig.id="figura32", fig.asp=ar_pic_32, out.width="1000px", fig.align='center', message=FALSE, warning=FALSE}
 
 #--- Dato ---#
 fig_32_created<-"Si"         #"Si" Es porque ya se creo el grafico y solo hay que cargarlo, "No" hay que creralo
@@ -3616,7 +3616,7 @@ Considerando entonces esta carga $H$ y sumándosela a la cota del cimacio se obt
 
 <br>
 
-```{r figura34, echo=FALSE, fig.cap = "Llenado de agua en el río para el caudal de diseño, cota 130.04 m.", fig.id="figura34", fig.asp=ar_pic_34, fig.width = 8, fig.pos="H", message=FALSE, warning=FALSE}
+```{r figura34, echo=FALSE, fig.cap = "Llenado de agua en el río para el caudal de diseño, cota 130.04 m.", fig.id="figura34", fig.asp=ar_pic_34, out.width="1000px", fig.align='center', message=FALSE, warning=FALSE}
 
 #--- Dato ---#
 fig_34_created<-"Si"         #"Si" Es porque ya se creo el grafico y solo hay que cargarlo, "No" hay que creralo
